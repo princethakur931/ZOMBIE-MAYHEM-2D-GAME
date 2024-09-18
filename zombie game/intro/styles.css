@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('zombie.png'); /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+}
+
+#startButton {
+    position: absolute;
+    bottom: 200px; /* Adjust this to move the button up */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #33cc33;
+    border: none;
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #28a828;
+}
+
+.github-corner:hover .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out;
+  }
+  
+  @-webkit-keyframes octocat-wave {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    20%, 60% {
+      transform: rotate(-25deg);
+    }
+    40%, 80% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @keyframes octocat-wave {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    20%, 60% {
+      transform: rotate(-25deg);
+    }
+    40%, 80% {
+      transform: rotate(10deg);
+    }
+  }
+  @media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+      -webkit-animation: none;
+              animation: none;
+    }
+  
+    .github-corner .octo-arm {
+      -webkit-animation: octocat-wave 560ms ease-in-out;
+              animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+  .github-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10000000;
+  }
+  
